@@ -1,0 +1,68 @@
+{
+  "rates": [
+    {
+      "id": 1,
+      "icon": "☀️",
+      "type": "Day Trip",
+      "desc": "Perfect for families, barkadas, and groups looking for a quick cool escape",
+      "price": 150,
+      "unit": "/ person",
+      "includes": [
+        "Full pool access",
+        "Use of resort grounds",
+        "Restroom & shower facilities",
+        "Access to cafe for orders"
+      ],
+      "note": "* Day trip hours: 8:00 AM – 6:00 PM"
+    },
+    {
+      "id": 2,
+      "icon": "🛏️",
+      "type": "Family Room",
+      "desc": "Comfortable room good for 2 guests, accommodates up to 4",
+      "price": 1500,
+      "unit": "/ night",
+      "featured": true,
+      "badge": "Most Popular",
+      "includes": [
+        "Good for 2 pax (max of 4)",
+        "Linens, towels & toiletries",
+        "Shampoo, soap, toothbrush & toothpaste",
+        "Full access to Lola Lys amenities",
+        "Check-in 2PM / Check-out 12NN"
+      ],
+      "note": "* Rates subject to change. Contact us to confirm availability."
+    },
+    {
+      "id": 3,
+      "icon": "🛏️",
+      "type": "Junior Room",
+      "desc": "Cozy room good for 2 guests, accommodates up to 3",
+      "price": 1500,
+      "unit": "/ night",
+      "includes": [
+        "Good for 2 pax (max of 3)",
+        "Linens, towels & toiletries",
+        "Shampoo, soap, toothbrush & toothpaste",
+        "Full access to Lola Lys amenities",
+        "Check-in 2PM / Check-out 12NN"
+      ],
+      "note": "* Rates subject to change. Contact us to confirm availability."
+    },
+    {
+      "id": 4,
+      "icon": "🏡",
+      "type": "Poolside Cottage",
+      "desc": "Spacious cottage right by the pool — ideal for bigger groups",
+      "price": 1500,
+      "unit": "/ cottage",
+      "includes": [
+        "Good for 10 pax (max of 12)",
+        "Full access to Lola Lys amenities",
+        "Pool & garden access",
+        "Access to cafe for orders"
+      ],
+      "note": "* All accommodations include access to Lola Lys amenities."
+    }
+  ]
+}

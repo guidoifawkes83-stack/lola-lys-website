@@ -1,0 +1,41 @@
+{
+  "promoPackages": [
+    {
+      "id": 1,
+      "name": "Package A",
+      "guests": "100 Guests",
+      "originalPrice": 217300,
+      "promoPrice": 207000,
+      "includes": [
+        "Use of Reception Hall for 4 hours",
+        "Catering for 100 guests",
+        "Table and venue styling",
+        "LED wall",
+        "Lights and sounds",
+        "Mobile bar (cocktails for 100 pax)",
+        "Photobooth (2 hours)",
+        "Use of 2 airconditioned rooms",
+        "Use of Lola Lys amenities"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Package B",
+      "guests": "100 Guests",
+      "originalPrice": 157300,
+      "promoPrice": 147000,
+      "featured": true,
+      "includes": [
+        "Use of Reception Hall for 4 hours",
+        "Catering for 100 guests",
+        "Table and venue styling",
+        "LED wall",
+        "Lights and sounds",
+        "Mobile bar (cocktails for 100 pax)",
+        "Photobooth (2 hours)",
+        "Use of 2 airconditioned rooms",
+        "Use of Lola Lys amenities"
+      ]
+    }
+  ]
+}

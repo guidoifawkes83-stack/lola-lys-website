@@ -1,0 +1,77 @@
+{
+  "eventPackages": [
+    {
+      "id": 1,
+      "type": "Reception Hall",
+      "desc": "Our largest venue — ideal for big celebrations and formal gatherings",
+      "startPrice": 60000,
+      "capacity": "up to 200 guests",
+      "includes": [
+        "Capacity: up to 200 guests",
+        "Free use of Garden included",
+        "Available for full day events",
+        "On-site coordination support",
+        "Access to Lola Lys amenities"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "Lounge Area",
+      "desc": "Intimate and stylish — perfect for smaller celebrations and gatherings",
+      "startPrice": 20000,
+      "capacity": "up to 80 guests",
+      "includes": [
+        "Capacity: up to 80 guests",
+        "Free use of Garden included",
+        "Flexible setup options",
+        "On-site coordination support",
+        "Access to Lola Lys amenities"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "Garden",
+      "desc": "Open air, lush greenery — great for casual outdoor celebrations",
+      "startPrice": 8000,
+      "capacity": "20–80 guests",
+      "includes": [
+        "Capacity: 20–80 guests",
+        "Free when booked with Reception Hall + Lounge",
+        "Flexible outdoor setup",
+        "On-site coordination support",
+        "Access to Lola Lys amenities"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "Full Day Event",
+      "desc": "All-day exclusive access — ideal for bigger celebrations and full family gatherings",
+      "startPrice": 15000,
+      "capacity": "Flexible",
+      "featured": true,
+      "badge": "Best Value",
+      "includes": [
+        "Exclusive venue use (full day)",
+        "Pool, garden & function hall",
+        "Full table, chair & tent setup",
+        "Cafe catering available (add-on)",
+        "Sound system (add-on)",
+        "On-site coordination support"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "Custom Package",
+      "desc": "Have something specific in mind? Let's talk and build it around your needs",
+      "startPrice": null,
+      "capacity": "Flexible",
+      "includes": [
+        "Flexible hours & setup",
+        "Choose your inclusions",
+        "Catering options available",
+        "Add-ons: sound, lights, decor",
+        "Tailored to your headcount"
+      ]
+    }
+  ]
+}

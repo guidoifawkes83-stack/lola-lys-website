@@ -1,0 +1,119 @@
+{
+  "cafeMenu": [
+    {
+      "id": 1,
+      "category": "Pasta",
+      "items": [
+        {
+          "id": "p1",
+          "name": "Aglio e Olio",
+          "desc": "Pizza tossed with extra virgin olive oil, sauteed garlic, anchovies, finished with a touch of sea salt and topped with fresh shrimp.",
+          "price": 200
+        },
+        {
+          "id": "p2",
+          "name": "Seafood Marinara",
+          "desc": "Pasta tossed in a rich tomato marinara sauce with shrimp, mussels, clams, and squid.",
+          "price": 340
+        },
+        {
+          "id": "p3",
+          "name": "Carbonara",
+          "desc": "Spaghetti tossed in a creamy sauce with bacon, parmesan, and a hint of black pepper.",
+          "price": 330
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "Pizza",
+      "items": [
+        {
+          "id": "pi1",
+          "name": "Hawaiian",
+          "desc": "Pizza topped with savory ham, sweet pineapple, and melted mozzarella on a golden crust.",
+          "price": 370
+        },
+        {
+          "id": "pi2",
+          "name": "Beef Shawarma",
+          "desc": "Pizza topped with seasoned beef shawarma, fresh vegetables, and melted cheese on a golden crust.",
+          "price": 410
+        },
+        {
+          "id": "pi3",
+          "name": "Lola Lys Signature",
+          "desc": "Our signature pizza loaded with salami, ground beef, mozzarella, olives, green peppers, and plenty of cheesy goodness.",
+          "price": 420,
+          "featured": true,
+          "badge": "Our Pick"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "Snacks",
+      "items": [
+        {
+          "id": "s1",
+          "name": "Chicken Tenders",
+          "desc": "Tender chicken breast in a light breadcrumb crust. Served with a side of fries.",
+          "price": 180
+        },
+        {
+          "id": "s2",
+          "name": "Fries",
+          "desc": "Thin-cut, crispy fries tossed in salt.",
+          "price": 150
+        },
+        {
+          "id": "s3",
+          "name": "Flavored Fries",
+          "desc": "Choose from Cheese or Sour Cream Herb.",
+          "price": 170
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "Coffee",
+      "items": [
+        {
+          "id": "c1",
+          "name": "Americano",
+          "desc": "Two shots of espresso combined with hot water to create a smooth, robust profile.",
+          "price": 85,
+          "tag": "Hot / Iced"
+        },
+        {
+          "id": "c2",
+          "name": "Vanilla Latte",
+          "desc": "Two shots of espresso combined with steamed milk and a touch of sweet vanilla.",
+          "price": 150,
+          "tag": "Hot / Iced"
+        },
+        {
+          "id": "c3",
+          "name": "Caramel Macchiato",
+          "desc": "Two shots of espresso marked over steamed milk and sweet vanilla, finished with a caramel drizzle.",
+          "price": 205,
+          "tag": "Hot / Iced"
+        },
+        {
+          "id": "c4",
+          "name": "White Mocha",
+          "desc": "Two shots of espresso combined with steamed milk and sweet white chocolate.",
+          "price": 190,
+          "tag": "Hot / Iced"
+        },
+        {
+          "id": "c5",
+          "name": "Cappuccino",
+          "desc": "Two shots of espresso combined with equal parts steamed milk and airy foam.",
+          "price": 140,
+          "tag": "Hot"
+        }
+      ]
+    }
+  ]
+}

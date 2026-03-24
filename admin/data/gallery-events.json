@@ -1,0 +1,20 @@
+{
+  "galleryEvents": [
+    {
+      "id": 1,
+      "image": "https://picsum.photos/400/300?random=13",
+      "caption": "Event celebration",
+      "large": true
+    },
+    {
+      "id": 2,
+      "image": "https://picsum.photos/400/300?random=14",
+      "caption": "Party setup"
+    },
+    {
+      "id": 3,
+      "image": "https://picsum.photos/400/300?random=15",
+      "caption": "Venue decorated"
+    }
+  ]
+}
