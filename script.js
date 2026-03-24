@@ -150,3 +150,48 @@ fetch('data.json')
     }
   })
   .catch(error => console.error('Error loading menu:', error));
+  // FETCH AND DISPLAY PROMO PACKAGES FROM data.json
+fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    const promoContainer = document.getElementById('promo-container');
+    
+    if (promoContainer) {
+      data.promoPackages.forEach(pkg => {
+        // Create the promo card
+        const promoCard = document.createElement('div');
+        promoCard.className = 'promo-card';
+        
+        // Add featured class if needed
+        if (pkg.featured) {
+          promoCard.classList.add('promo-card--featured');
+        }
+        
+        // Build the includes list
+        const includesList = pkg.includes
+          .map(item => `<li>${item}</li>`)
+          .join('');
+        
+        // Build the promo card HTML
+        promoCard.innerHTML = `
+          <div class="promo-card-header">
+            <h3 class="promo-name">${pkg.name}</h3>
+            <p class="promo-guests">${pkg.guests}</p>
+          </div>
+          <div class="promo-price-block">
+            <span class="promo-original">PHP ${pkg.originalPrice.toLocaleString()}</span>
+            <span class="promo-amount">PHP ${pkg.promoPrice.toLocaleString()}</span>
+            <span class="promo-unit">only</span>
+          </div>
+          <ul class="package-includes">
+            ${includesList}
+          </ul>
+          <a href="mailto:lolalys.resort01@gmail.com" class="package-btn ${pkg.featured ? 'package-btn--light' : ''}">Book ${pkg.name}</a>
+        `;
+        
+        // Add the card to the container
+        promoContainer.appendChild(promoCard);
+      });
+    }
+  })
+  .catch(error => console.error('Error loading promo packages:', error));
