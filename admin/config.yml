@@ -10,126 +10,147 @@ collections:
   # ─── RESORT RATES ───────────────────────────────────────────
   - name: "rates"
     label: "Resort Rates"
-    file: "data/rates.json"
-    fields:
+    files:
       - name: "rates"
-        label: "Rates"
-        widget: "list"
+        label: "Resort Rates"
+        file: "data/rates.json"
         fields:
-          - { name: "id", label: "ID", widget: "number" }
-          - { name: "icon", label: "Icon (emoji)", widget: "string" }
-          - { name: "type", label: "Type", widget: "string" }
-          - { name: "desc", label: "Description", widget: "text" }
-          - { name: "price", label: "Price (PHP)", widget: "number" }
-          - { name: "unit", label: "Unit (e.g. / person)", widget: "string" }
-          - name: "includes"
-            label: "Includes"
+          - name: "rates"
+            label: "Rates"
             widget: "list"
-            field: { name: "item", label: "Item", widget: "string" }
-          - { name: "note", label: "Note", widget: "string" }
-          - { name: "featured", label: "Featured?", widget: "boolean", default: false, required: false }
-          - { name: "badge", label: "Badge Label", widget: "string", required: false }
+            fields:
+              - { name: "id", label: "ID", widget: "number" }
+              - { name: "icon", label: "Icon (emoji)", widget: "string" }
+              - { name: "type", label: "Type", widget: "string" }
+              - { name: "desc", label: "Description", widget: "text" }
+              - { name: "price", label: "Price (PHP)", widget: "number" }
+              - { name: "unit", label: "Unit (e.g. / person)", widget: "string" }
+              - name: "includes"
+                label: "Includes"
+                widget: "list"
+                field: { name: "item", label: "Item", widget: "string" }
+              - { name: "note", label: "Note", widget: "string" }
+              - { name: "featured", label: "Featured?", widget: "boolean", default: false, required: false }
+              - { name: "badge", label: "Badge Label", widget: "string", required: false }
 
   # ─── CAFE MENU ──────────────────────────────────────────────
   - name: "cafeMenu"
     label: "Cafe Menu"
-    file: "data/cafe-menu.json"
-    fields:
+    files:
       - name: "cafeMenu"
-        label: "Menu Categories"
-        widget: "list"
+        label: "Cafe Menu"
+        file: "data/cafe-menu.json"
         fields:
-          - { name: "id", label: "ID", widget: "number" }
-          - { name: "category", label: "Category Name", widget: "string" }
-          - name: "items"
-            label: "Menu Items"
+          - name: "cafeMenu"
+            label: "Menu Categories"
             widget: "list"
             fields:
-              - { name: "id", label: "Item ID", widget: "string" }
-              - { name: "name", label: "Name", widget: "string" }
-              - { name: "desc", label: "Description", widget: "text" }
-              - { name: "price", label: "Price (PHP)", widget: "number" }
-              - { name: "tag", label: "Tag (e.g. Hot / Iced)", widget: "string", required: false }
-              - { name: "featured", label: "Featured?", widget: "boolean", default: false, required: false }
-              - { name: "badge", label: "Badge Label", widget: "string", required: false }
+              - { name: "id", label: "ID", widget: "number" }
+              - { name: "category", label: "Category Name", widget: "string" }
+              - name: "items"
+                label: "Menu Items"
+                widget: "list"
+                fields:
+                  - { name: "id", label: "Item ID", widget: "string" }
+                  - { name: "name", label: "Name", widget: "string" }
+                  - { name: "desc", label: "Description", widget: "text" }
+                  - { name: "price", label: "Price (PHP)", widget: "number" }
+                  - { name: "tag", label: "Tag (e.g. Hot / Iced)", widget: "string", required: false }
+                  - { name: "featured", label: "Featured?", widget: "boolean", default: false, required: false }
+                  - { name: "badge", label: "Badge Label", widget: "string", required: false }
 
   # ─── RESORT GALLERY ─────────────────────────────────────────
   - name: "galleryResort"
     label: "Resort Gallery"
-    file: "data/gallery-resort.json"
-    fields:
+    files:
       - name: "galleryResort"
         label: "Resort Photos"
-        widget: "list"
+        file: "data/gallery-resort.json"
         fields:
-          - { name: "id", label: "ID", widget: "number" }
-          - { name: "image", label: "Photo", widget: "image" }
-          - { name: "caption", label: "Caption", widget: "string" }
+          - name: "galleryResort"
+            label: "Resort Photos"
+            widget: "list"
+            fields:
+              - { name: "id", label: "ID", widget: "number" }
+              - { name: "image", label: "Photo", widget: "image" }
+              - { name: "caption", label: "Caption", widget: "string" }
 
   # ─── CAFE GALLERY ───────────────────────────────────────────
   - name: "galleryCafe"
     label: "Cafe Gallery"
-    file: "data/gallery-cafe.json"
-    fields:
+    files:
       - name: "galleryCafe"
         label: "Cafe Photos"
-        widget: "list"
+        file: "data/gallery-cafe.json"
         fields:
-          - { name: "id", label: "ID", widget: "number" }
-          - { name: "image", label: "Photo", widget: "image" }
-          - { name: "caption", label: "Caption", widget: "string" }
+          - name: "galleryCafe"
+            label: "Cafe Photos"
+            widget: "list"
+            fields:
+              - { name: "id", label: "ID", widget: "number" }
+              - { name: "image", label: "Photo", widget: "image" }
+              - { name: "caption", label: "Caption", widget: "string" }
 
   # ─── EVENTS GALLERY ─────────────────────────────────────────
   - name: "galleryEvents"
     label: "Events Gallery"
-    file: "data/gallery-events.json"
-    fields:
+    files:
       - name: "galleryEvents"
         label: "Events Photos"
-        widget: "list"
+        file: "data/gallery-events.json"
         fields:
-          - { name: "id", label: "ID", widget: "number" }
-          - { name: "image", label: "Photo", widget: "image" }
-          - { name: "caption", label: "Caption", widget: "string" }
-          - { name: "large", label: "Large (featured photo)?", widget: "boolean", default: false, required: false }
+          - name: "galleryEvents"
+            label: "Events Photos"
+            widget: "list"
+            fields:
+              - { name: "id", label: "ID", widget: "number" }
+              - { name: "image", label: "Photo", widget: "image" }
+              - { name: "caption", label: "Caption", widget: "string" }
+              - { name: "large", label: "Featured (large)?", widget: "boolean", default: false, required: false }
 
   # ─── EVENT PACKAGES ─────────────────────────────────────────
   - name: "eventPackages"
     label: "Event Packages"
-    file: "data/event-packages.json"
-    fields:
+    files:
       - name: "eventPackages"
-        label: "Packages"
-        widget: "list"
+        label: "Event Packages"
+        file: "data/event-packages.json"
         fields:
-          - { name: "id", label: "ID", widget: "number" }
-          - { name: "type", label: "Package Type", widget: "string" }
-          - { name: "desc", label: "Description", widget: "text" }
-          - { name: "startPrice", label: "Starting Price (PHP)", widget: "number", required: false }
-          - { name: "capacity", label: "Capacity", widget: "string" }
-          - name: "includes"
-            label: "Includes"
+          - name: "eventPackages"
+            label: "Packages"
             widget: "list"
-            field: { name: "item", label: "Item", widget: "string" }
-          - { name: "featured", label: "Featured?", widget: "boolean", default: false, required: false }
-          - { name: "badge", label: "Badge Label", widget: "string", required: false }
+            fields:
+              - { name: "id", label: "ID", widget: "number" }
+              - { name: "type", label: "Package Type", widget: "string" }
+              - { name: "desc", label: "Description", widget: "text" }
+              - { name: "startPrice", label: "Starting Price (PHP)", widget: "number", required: false }
+              - { name: "capacity", label: "Capacity", widget: "string" }
+              - name: "includes"
+                label: "Includes"
+                widget: "list"
+                field: { name: "item", label: "Item", widget: "string" }
+              - { name: "featured", label: "Featured?", widget: "boolean", default: false, required: false }
+              - { name: "badge", label: "Badge Label", widget: "string", required: false }
 
   # ─── PROMO PACKAGES ─────────────────────────────────────────
   - name: "promoPackages"
     label: "Promo Packages"
-    file: "data/promo-packages.json"
-    fields:
+    files:
       - name: "promoPackages"
         label: "Promo Packages"
-        widget: "list"
+        file: "data/promo-packages.json"
         fields:
-          - { name: "id", label: "ID", widget: "number" }
-          - { name: "name", label: "Package Name", widget: "string" }
-          - { name: "guests", label: "Guest Count Label", widget: "string" }
-          - { name: "originalPrice", label: "Original Price (PHP)", widget: "number" }
-          - { name: "promoPrice", label: "Promo Price (PHP)", widget: "number" }
-          - name: "includes"
-            label: "Includes"
+          - name: "promoPackages"
+            label: "Promo Packages"
             widget: "list"
-            field: { name: "item", label: "Item", widget: "string" }
-          - { name: "featured", label: "Featured?", widget: "boolean", default: false, required: false }
+            fields:
+              - { name: "id", label: "ID", widget: "number" }
+              - { name: "name", label: "Package Name", widget: "string" }
+              - { name: "guests", label: "Guest Count Label", widget: "string" }
+              - { name: "originalPrice", label: "Original Price (PHP)", widget: "number" }
+              - { name: "promoPrice", label: "Promo Price (PHP)", widget: "number" }
+              - name: "includes"
+                label: "Includes"
+                widget: "list"
+                field: { name: "item", label: "Item", widget: "string" }
+              - { name: "featured", label: "Featured?", widget: "boolean", default: false, required: false }
