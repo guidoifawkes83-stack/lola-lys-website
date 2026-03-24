@@ -182,48 +182,86 @@
       ]
     }
   ],
-  "gallery": [
+"galleryResort": [
     {
       "id": 1,
-      "section": "resort",
-      "image": "images/resort/resort-pool.jpg",
+      "image": "https://picsum.photos/400/300?random=1",
       "caption": "Swimming pool"
     },
     {
       "id": 2,
-      "section": "resort",
-      "image": "images/resort/resort-garden.jpg",
+      "image": "https://picsum.photos/400/300?random=2",
       "caption": "Garden grounds"
     },
     {
       "id": 3,
-      "section": "resort",
-      "image": "images/resort/resort-cottage.jpg",
+      "image": "https://picsum.photos/400/300?random=3",
       "caption": "Poolside cottage"
     },
     {
       "id": 4,
-      "section": "resort",
-      "image": "images/resort/resort-room.jpg",
+      "image": "https://picsum.photos/400/300?random=4",
       "caption": "Guest room"
     },
     {
       "id": 5,
-      "section": "cafe",
-      "image": "images/cafe/cafe-interior.jpg",
-      "caption": "Cafe interior"
+      "image": "https://picsum.photos/400/300?random=5",
+      "caption": "Scenic view"
     },
     {
       "id": 6,
-      "section": "cafe",
-      "image": "images/cafe/cafe-drinks.jpg",
+      "image": "https://picsum.photos/400/300?random=6",
+      "caption": "Night ambiance"
+    }
+  ],
+  "galleryCafe": [
+    {
+      "id": 1,
+      "image": "https://picsum.photos/400/300?random=7",
+      "caption": "Cafe interior"
+    },
+    {
+      "id": 2,
+      "image": "https://picsum.photos/400/300?random=8",
       "caption": "Drinks"
     },
     {
-      "id": 7,
-      "section": "cafe",
-      "image": "images/cafe/cafe-garden.jpg",
+      "id": 3,
+      "image": "https://picsum.photos/400/300?random=9",
       "caption": "Garden view"
+    },
+    {
+      "id": 4,
+      "image": "https://picsum.photos/400/300?random=10",
+      "caption": "Evening ambiance"
+    },
+    {
+      "id": 5,
+      "image": "https://picsum.photos/400/300?random=11",
+      "caption": "Table setting"
+    },
+    {
+      "id": 6,
+      "image": "https://picsum.photos/400/300?random=12",
+      "caption": "Outdoor seating"
+    }
+  ],
+  "galleryEvents": [
+    {
+      "id": 1,
+      "image": "https://picsum.photos/400/300?random=13",
+      "caption": "Event celebration",
+      "large": true
+    },
+    {
+      "id": 2,
+      "image": "https://picsum.photos/400/300?random=14",
+      "caption": "Party setup"
+    },
+    {
+      "id": 3,
+      "image": "https://picsum.photos/400/300?random=15",
+      "caption": "Venue decorated"
     }
   ]
 "eventPackages": [

@@ -195,3 +195,72 @@ fetch('data.json')
     }
   })
   .catch(error => console.error('Error loading promo packages:', error));
+  // FETCH AND DISPLAY RESORT GALLERY FROM data.json
+fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    const resortGalleryContainer = document.getElementById('resort-gallery-container');
+    
+    if (resortGalleryContainer) {
+      data.galleryResort.forEach(photo => {
+        const galleryItem = document.createElement('div');
+        galleryItem.className = 'gallery-item';
+        
+        galleryItem.innerHTML = `
+          <img src="${photo.image}" alt="${photo.caption}" loading="lazy">
+          <p>${photo.caption}</p>
+        `;
+        
+        resortGalleryContainer.appendChild(galleryItem);
+      });
+    }
+  })
+  .catch(error => console.error('Error loading resort gallery:', error));
+
+// FETCH AND DISPLAY CAFE GALLERY FROM data.json
+fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    const cafeGalleryContainer = document.getElementById('cafe-gallery-container');
+    
+    if (cafeGalleryContainer) {
+      data.galleryCafe.forEach(photo => {
+        const galleryItem = document.createElement('div');
+        galleryItem.className = 'gallery-item';
+        
+        galleryItem.innerHTML = `
+          <img src="${photo.image}" alt="${photo.caption}" loading="lazy">
+          <p>${photo.caption}</p>
+        `;
+        
+        cafeGalleryContainer.appendChild(galleryItem);
+      });
+    }
+  })
+  .catch(error => console.error('Error loading cafe gallery:', error));
+
+// FETCH AND DISPLAY EVENTS GALLERY FROM data.json
+fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    const eventsGalleryContainer = document.getElementById('events-gallery-container');
+    
+    if (eventsGalleryContainer) {
+      data.galleryEvents.forEach(photo => {
+        const galleryItem = document.createElement('div');
+        galleryItem.className = 'gallery-item';
+        
+        // Add large class if marked
+        if (photo.large) {
+          galleryItem.classList.add('events-gallery-item--large');
+        }
+        
+        galleryItem.innerHTML = `
+          <img src="${photo.image}" alt="${photo.caption}">
+        `;
+        
+        eventsGalleryContainer.appendChild(galleryItem);
+      });
+    }
+  })
+  .catch(error => console.error('Error loading events gallery:', error));
