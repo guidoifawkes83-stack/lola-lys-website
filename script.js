@@ -42,30 +42,28 @@ if (hamburger && mobileMenu) {
     });
   });
 }
-// FETCH AND DISPLAY RATES FROM data.json
-fetch('data.json')
+
+// FETCH ALL DATA — single request, handles all pages
+fetch('/data.json')
   .then(response => response.json())
   .then(data => {
+
+    // --- RESORT RATES (resort.html) ---
     const ratesContainer = document.getElementById('rates-container');
-    
     if (ratesContainer) {
       data.rates.forEach(rate => {
-        // Create the rate card
         const rateCard = document.createElement('div');
         rateCard.className = 'rate-card';
-        
-        // Add featured badge if needed
+
         let badgeHTML = '';
         if (rate.featured) {
           badgeHTML = `<div class="rate-featured-badge">${rate.badge}</div>`;
         }
-        
-        // Build the includes list
+
         const includesList = rate.includes
           .map(item => `<li>${item}</li>`)
           .join('');
-        
-        // Build the card HTML
+
         rateCard.innerHTML = `
           ${badgeHTML}
           <div class="rate-card-top">
@@ -82,97 +80,117 @@ fetch('data.json')
           </ul>
           <p class="rate-note">${rate.note}</p>
         `;
-        
-        // Add the card to the container
+
         ratesContainer.appendChild(rateCard);
       });
     }
-  })
-  .catch(error => console.error('Error loading rates:', error));
-// FETCH AND DISPLAY CAFE MENU FROM data.json
-fetch('data.json')
-  .then(response => response.json())
-  .then(data => {
+
+    // --- CAFE MENU (cafe.html) ---
     const menuContainer = document.getElementById('menu-container');
-    
     if (menuContainer) {
       data.cafeMenu.forEach(category => {
-        // Create category section
         const categorySection = document.createElement('div');
         categorySection.className = 'menu-category';
-        
-        // Category title
+
         const categoryTitle = document.createElement('h3');
         categoryTitle.className = 'menu-category-title';
         categoryTitle.textContent = category.category;
         categorySection.appendChild(categoryTitle);
-        
-        // Menu items grid
+
         const menuGrid = document.createElement('div');
         menuGrid.className = 'menu-grid';
-        
+
         category.items.forEach(item => {
           const menuItem = document.createElement('div');
           menuItem.className = 'menu-item';
-          
-          // Add featured class if needed
+
           if (item.featured) {
             menuItem.classList.add('menu-item--featured');
           }
-          
-          // Build badge HTML if featured
+
           let badgeHTML = '';
           if (item.badge) {
             badgeHTML = `<span class="menu-badge">${item.badge}</span>`;
           }
-          
-          // Build tag HTML if exists
+
           let tagHTML = '';
           if (item.tag) {
             tagHTML = `<span class="menu-tag">${item.tag}</span>`;
           }
-          
-          // Build item HTML
+
           menuItem.innerHTML = `
             <div class="menu-item-info">
-              <h4 class="menu-item-name">${item.name} ${badgeHTML}</h4>
+              <h4 class="menu-item-name">${item.name} ${badgeHTML} ${tagHTML}</h4>
               <p class="menu-item-desc">${item.desc}</p>
             </div>
             <span class="menu-item-price">₱${item.price}</span>
           `;
-          
+
           menuGrid.appendChild(menuItem);
         });
-        
+
         categorySection.appendChild(menuGrid);
         menuContainer.appendChild(categorySection);
       });
     }
-  })
-  .catch(error => console.error('Error loading menu:', error));
-  // FETCH AND DISPLAY PROMO PACKAGES FROM data.json
-fetch('data.json')
-  .then(response => response.json())
-  .then(data => {
-    const promoContainer = document.getElementById('promo-container');
-    
-    if (promoContainer) {
-      data.promoPackages.forEach(pkg => {
-        // Create the promo card
-        const promoCard = document.createElement('div');
-        promoCard.className = 'promo-card';
-        
-        // Add featured class if needed
+
+    // --- EVENT PACKAGES (events.html) ---
+    const packagesContainer = document.getElementById('packages-container');
+    if (packagesContainer) {
+      data.eventPackages.forEach(pkg => {
+        const pkgCard = document.createElement('div');
+        pkgCard.className = 'package-card';
+
         if (pkg.featured) {
-          promoCard.classList.add('promo-card--featured');
+          pkgCard.classList.add('package-card--featured');
         }
-        
-        // Build the includes list
+
+        let badgeHTML = '';
+        if (pkg.badge) {
+          badgeHTML = `<div class="package-badge">${pkg.badge}</div>`;
+        }
+
         const includesList = pkg.includes
           .map(item => `<li>${item}</li>`)
           .join('');
-        
-        // Build the promo card HTML
+
+        const priceHTML = pkg.startPrice
+          ? `<span class="package-price">Starts at PHP ${pkg.startPrice.toLocaleString()}</span>`
+          : `<span class="package-price">Let's talk</span>`;
+
+        pkgCard.innerHTML = `
+          ${badgeHTML}
+          <div class="package-card-top">
+            <h3 class="package-type">${pkg.type}</h3>
+            <p class="package-desc">${pkg.desc}</p>
+            <p class="package-capacity">👥 ${pkg.capacity}</p>
+          </div>
+          ${priceHTML}
+          <ul class="package-includes">
+            ${includesList}
+          </ul>
+          <a href="mailto:lolalys.resort01@gmail.com" class="package-btn ${pkg.featured ? 'package-btn--light' : ''}">Inquire Now</a>
+        `;
+
+        packagesContainer.appendChild(pkgCard);
+      });
+    }
+
+    // --- PROMO PACKAGES (events.html) ---
+    const promoContainer = document.getElementById('promo-container');
+    if (promoContainer) {
+      data.promoPackages.forEach(pkg => {
+        const promoCard = document.createElement('div');
+        promoCard.className = 'promo-card';
+
+        if (pkg.featured) {
+          promoCard.classList.add('promo-card--featured');
+        }
+
+        const includesList = pkg.includes
+          .map(item => `<li>${item}</li>`)
+          .join('');
+
         promoCard.innerHTML = `
           <div class="promo-card-header">
             <h3 class="promo-name">${pkg.name}</h3>
@@ -188,79 +206,57 @@ fetch('data.json')
           </ul>
           <a href="mailto:lolalys.resort01@gmail.com" class="package-btn ${pkg.featured ? 'package-btn--light' : ''}">Book ${pkg.name}</a>
         `;
-        
-        // Add the card to the container
+
         promoContainer.appendChild(promoCard);
       });
     }
-  })
-  .catch(error => console.error('Error loading promo packages:', error));
-  // FETCH AND DISPLAY RESORT GALLERY FROM data.json
-fetch('data.json')
-  .then(response => response.json())
-  .then(data => {
+
+    // --- RESORT GALLERY (resort.html) ---
     const resortGalleryContainer = document.getElementById('resort-gallery-container');
-    
     if (resortGalleryContainer) {
       data.galleryResort.forEach(photo => {
         const galleryItem = document.createElement('div');
         galleryItem.className = 'gallery-item';
-        
         galleryItem.innerHTML = `
           <img src="${photo.image}" alt="${photo.caption}" loading="lazy">
           <p>${photo.caption}</p>
         `;
-        
         resortGalleryContainer.appendChild(galleryItem);
       });
     }
-  })
-  .catch(error => console.error('Error loading resort gallery:', error));
 
-// FETCH AND DISPLAY CAFE GALLERY FROM data.json
-fetch('data.json')
-  .then(response => response.json())
-  .then(data => {
+    // --- CAFE GALLERY (cafe.html) ---
     const cafeGalleryContainer = document.getElementById('cafe-gallery-container');
-    
     if (cafeGalleryContainer) {
       data.galleryCafe.forEach(photo => {
         const galleryItem = document.createElement('div');
         galleryItem.className = 'gallery-item';
-        
         galleryItem.innerHTML = `
           <img src="${photo.image}" alt="${photo.caption}" loading="lazy">
           <p>${photo.caption}</p>
         `;
-        
         cafeGalleryContainer.appendChild(galleryItem);
       });
     }
-  })
-  .catch(error => console.error('Error loading cafe gallery:', error));
 
-// FETCH AND DISPLAY EVENTS GALLERY FROM data.json
-fetch('data.json')
-  .then(response => response.json())
-  .then(data => {
+    // --- EVENTS GALLERY (events.html) ---
     const eventsGalleryContainer = document.getElementById('events-gallery-container');
-    
     if (eventsGalleryContainer) {
       data.galleryEvents.forEach(photo => {
         const galleryItem = document.createElement('div');
         galleryItem.className = 'gallery-item';
-        
-        // Add large class if marked
+
         if (photo.large) {
           galleryItem.classList.add('events-gallery-item--large');
         }
-        
+
         galleryItem.innerHTML = `
           <img src="${photo.image}" alt="${photo.caption}">
         `;
-        
+
         eventsGalleryContainer.appendChild(galleryItem);
       });
     }
+
   })
-  .catch(error => console.error('Error loading events gallery:', error));
+  .catch(error => console.error('Error loading data.json:', error));
