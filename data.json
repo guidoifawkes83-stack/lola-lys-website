@@ -2,7 +2,7 @@
   "rates": [
     {
       "id": 1,
-      "icon": "☀️",
+      "icon": "\u2600\ufe0f",
       "type": "Day Trip",
       "desc": "Perfect for families, barkadas, and groups looking for a quick cool escape",
       "price": 150,
@@ -13,11 +13,11 @@
         "Restroom & shower facilities",
         "Access to cafe for orders"
       ],
-      "note": "* Day trip hours: 8:00 AM – 6:00 PM"
+      "note": "* Day trip hours: 8:00 AM \u2013 6:00 PM"
     },
     {
       "id": 2,
-      "icon": "🛏️",
+      "icon": "\ud83d\udecf\ufe0f",
       "type": "Family Room",
       "desc": "Comfortable room good for 2 guests, accommodates up to 4",
       "price": 1500,
@@ -35,7 +35,7 @@
     },
     {
       "id": 3,
-      "icon": "🛏️",
+      "icon": "\ud83d\udecf\ufe0f",
       "type": "Junior Room",
       "desc": "Cozy room good for 2 guests, accommodates up to 3",
       "price": 1500,
@@ -51,9 +51,9 @@
     },
     {
       "id": 4,
-      "icon": "🏡",
+      "icon": "\ud83c\udfe1",
       "type": "Poolside Cottage",
-      "desc": "Spacious cottage right by the pool — ideal for bigger groups",
+      "desc": "Spacious cottage right by the pool \u2014 ideal for bigger groups",
       "price": 1500,
       "unit": "/ cottage",
       "includes": [
@@ -185,82 +185,82 @@
   "galleryResort": [
     {
       "id": 1,
-      "image": "https://picsum.photos/400/300?random=1",
+      "image": "https://placehold.co/800x500/2a2a1a/F4D03F?text=Swimming+pool",
       "caption": "Swimming pool"
     },
     {
       "id": 2,
-      "image": "https://picsum.photos/400/300?random=2",
+      "image": "https://placehold.co/800x500/2a2a1a/F4D03F?text=Garden+grounds",
       "caption": "Garden grounds"
     },
     {
       "id": 3,
-      "image": "https://picsum.photos/400/300?random=3",
+      "image": "https://placehold.co/800x500/2a2a1a/F4D03F?text=Poolside+cottage",
       "caption": "Poolside cottage"
     },
     {
       "id": 4,
-      "image": "https://picsum.photos/400/300?random=4",
+      "image": "https://placehold.co/800x500/2a2a1a/F4D03F?text=Guest+room",
       "caption": "Guest room"
     },
     {
       "id": 5,
-      "image": "https://picsum.photos/400/300?random=5",
+      "image": "https://placehold.co/800x500/2a2a1a/F4D03F?text=Scenic+view",
       "caption": "Scenic view"
     },
     {
       "id": 6,
-      "image": "https://picsum.photos/400/300?random=6",
+      "image": "https://placehold.co/800x500/2a2a1a/F4D03F?text=Night+ambiance",
       "caption": "Night ambiance"
     }
   ],
   "galleryCafe": [
     {
       "id": 1,
-      "image": "https://picsum.photos/400/300?random=7",
+      "image": "https://placehold.co/800x500/1a1a0a/F4D03F?text=Cafe+interior",
       "caption": "Cafe interior"
     },
     {
       "id": 2,
-      "image": "https://picsum.photos/400/300?random=8",
+      "image": "https://placehold.co/800x500/1a1a0a/F4D03F?text=Drinks",
       "caption": "Drinks"
     },
     {
       "id": 3,
-      "image": "https://picsum.photos/400/300?random=9",
+      "image": "https://placehold.co/800x500/1a1a0a/F4D03F?text=Garden+view",
       "caption": "Garden view"
     },
     {
       "id": 4,
-      "image": "https://picsum.photos/400/300?random=10",
+      "image": "https://placehold.co/800x500/1a1a0a/F4D03F?text=Evening+ambiance",
       "caption": "Evening ambiance"
     },
     {
       "id": 5,
-      "image": "https://picsum.photos/400/300?random=11",
+      "image": "https://placehold.co/800x500/1a1a0a/F4D03F?text=Table+setting",
       "caption": "Table setting"
     },
     {
       "id": 6,
-      "image": "https://picsum.photos/400/300?random=12",
+      "image": "https://placehold.co/800x500/1a1a0a/F4D03F?text=Outdoor+seating",
       "caption": "Outdoor seating"
     }
   ],
   "galleryEvents": [
     {
       "id": 1,
-      "image": "https://picsum.photos/400/300?random=13",
+      "image": "https://placehold.co/800x500/0a0a1a/F4D03F?text=Event+celebration",
       "caption": "Event celebration",
       "large": true
     },
     {
       "id": 2,
-      "image": "https://picsum.photos/400/300?random=14",
+      "image": "https://placehold.co/800x500/0a0a1a/F4D03F?text=Party+setup",
       "caption": "Party setup"
     },
     {
       "id": 3,
-      "image": "https://picsum.photos/400/300?random=15",
+      "image": "https://placehold.co/800x500/0a0a1a/F4D03F?text=Venue+decorated",
       "caption": "Venue decorated"
     }
   ],
@@ -268,7 +268,7 @@
     {
       "id": 1,
       "type": "Reception Hall",
-      "desc": "Our largest venue — ideal for big celebrations and formal gatherings",
+      "desc": "Our largest venue \u2014 ideal for big celebrations and formal gatherings",
       "startPrice": 60000,
       "capacity": "up to 200 guests",
       "includes": [
@@ -282,7 +282,7 @@
     {
       "id": 2,
       "type": "Lounge Area",
-      "desc": "Intimate and stylish — perfect for smaller celebrations and gatherings",
+      "desc": "Intimate and stylish \u2014 perfect for smaller celebrations and gatherings",
       "startPrice": 20000,
       "capacity": "up to 80 guests",
       "includes": [
@@ -296,11 +296,11 @@
     {
       "id": 3,
       "type": "Garden",
-      "desc": "Open air, lush greenery — great for casual outdoor celebrations",
+      "desc": "Open air, lush greenery \u2014 great for casual outdoor celebrations",
       "startPrice": 8000,
-      "capacity": "20–80 guests",
+      "capacity": "20\u201380 guests",
       "includes": [
-        "Capacity: 20–80 guests",
+        "Capacity: 20\u201380 guests",
         "Free when booked with Reception Hall + Lounge",
         "Flexible outdoor setup",
         "On-site coordination support",
@@ -310,7 +310,7 @@
     {
       "id": 4,
       "type": "Full Day Event",
-      "desc": "All-day exclusive access — ideal for bigger celebrations and full family gatherings",
+      "desc": "All-day exclusive access \u2014 ideal for bigger celebrations and full family gatherings",
       "startPrice": 15000,
       "capacity": "Flexible",
       "featured": true,
