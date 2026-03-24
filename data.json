@@ -1,0 +1,229 @@
+{
+  "rates": [
+    {
+      "id": 1,
+      "icon": "☀️",
+      "type": "Day Trip",
+      "desc": "Perfect for families, barkadas, and groups looking for a quick cool escape",
+      "price": 150,
+      "unit": "/ person",
+      "includes": [
+        "Full pool access",
+        "Use of resort grounds",
+        "Restroom & shower facilities",
+        "Access to cafe for orders"
+      ],
+      "note": "* Day trip hours: 8:00 AM – 6:00 PM"
+    },
+    {
+      "id": 2,
+      "icon": "🛏️",
+      "type": "Family Room",
+      "desc": "Comfortable room good for 2 guests, accommodates up to 4",
+      "price": 1500,
+      "unit": "/ night",
+      "featured": true,
+      "badge": "Most Popular",
+      "includes": [
+        "Good for 2 pax (max of 4)",
+        "Linens, towels & toiletries",
+        "Shampoo, soap, toothbrush & toothpaste",
+        "Full access to Lola Lys amenities",
+        "Check-in 2PM / Check-out 12NN"
+      ],
+      "note": "* Rates subject to change. Contact us to confirm availability."
+    },
+    {
+      "id": 3,
+      "icon": "🛏️",
+      "type": "Junior Room",
+      "desc": "Cozy room good for 2 guests, accommodates up to 3",
+      "price": 1500,
+      "unit": "/ night",
+      "includes": [
+        "Good for 2 pax (max of 3)",
+        "Linens, towels & toiletries",
+        "Shampoo, soap, toothbrush & toothpaste",
+        "Full access to Lola Lys amenities",
+        "Check-in 2PM / Check-out 12NN"
+      ],
+      "note": "* Rates subject to change. Contact us to confirm availability."
+    },
+    {
+      "id": 4,
+      "icon": "🏡",
+      "type": "Poolside Cottage",
+      "desc": "Spacious cottage right by the pool — ideal for bigger groups",
+      "price": 1500,
+      "unit": "/ cottage",
+      "includes": [
+        "Good for 10 pax (max of 12)",
+        "Full access to Lola Lys amenities",
+        "Pool & garden access",
+        "Access to cafe for orders"
+      ],
+      "note": "* All accommodations include access to Lola Lys amenities."
+    }
+  ],
+  "cafeMenu": [
+    {
+      "id": 1,
+      "category": "Pasta",
+      "items": [
+        {
+          "id": "p1",
+          "name": "Aglio e Olio",
+          "desc": "Pizza tossed with extra virgin olive oil, sauteed garlic, anchovies, finished with a touch of sea salt and topped with fresh shrimp.",
+          "price": 200
+        },
+        {
+          "id": "p2",
+          "name": "Seafood Marinara",
+          "desc": "Pasta tossed in a rich tomato marinara sauce with shrimp, mussels, clams, and squid.",
+          "price": 340
+        },
+        {
+          "id": "p3",
+          "name": "Carbonara",
+          "desc": "Spaghetti tossed in a creamy sauce with bacon, parmesan, and a hint of black pepper.",
+          "price": 330
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "Pizza",
+      "items": [
+        {
+          "id": "pi1",
+          "name": "Hawaiian",
+          "desc": "Pizza topped with savory ham, sweet pineapple, and melted mozzarella on a golden crust.",
+          "price": 370
+        },
+        {
+          "id": "pi2",
+          "name": "Beef Shawarma",
+          "desc": "Pizza topped with seasoned beef shawarma, fresh vegetables, and melted cheese on a golden crust.",
+          "price": 410
+        },
+        {
+          "id": "pi3",
+          "name": "Lola Lys Signature",
+          "desc": "Our signature pizza loaded with salami, ground beef, mozzarella, olives, green peppers, and plenty of cheesy goodness.",
+          "price": 420,
+          "featured": true,
+          "badge": "Our Pick"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "Snacks",
+      "items": [
+        {
+          "id": "s1",
+          "name": "Chicken Tenders",
+          "desc": "Tender chicken breast in a light breadcrumb crust. Served with a side of fries.",
+          "price": 180
+        },
+        {
+          "id": "s2",
+          "name": "Fries",
+          "desc": "Thin-cut, crispy fries tossed in salt.",
+          "price": 150
+        },
+        {
+          "id": "s3",
+          "name": "Flavored Fries",
+          "desc": "Choose from Cheese or Sour Cream Herb.",
+          "price": 170
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "Coffee",
+      "items": [
+        {
+          "id": "c1",
+          "name": "Americano",
+          "desc": "Two shots of espresso combined with hot water to create a smooth, robust profile.",
+          "price": 85,
+          "tag": "Hot / Iced"
+        },
+        {
+          "id": "c2",
+          "name": "Vanilla Latte",
+          "desc": "Two shots of espresso combined with steamed milk and a touch of sweet vanilla.",
+          "price": 150,
+          "tag": "Hot / Iced"
+        },
+        {
+          "id": "c3",
+          "name": "Caramel Macchiato",
+          "desc": "Two shots of espresso marked over steamed milk and sweet vanilla, finished with a caramel drizzle.",
+          "price": 205,
+          "tag": "Hot / Iced"
+        },
+        {
+          "id": "c4",
+          "name": "White Mocha",
+          "desc": "Two shots of espresso combined with steamed milk and sweet white chocolate.",
+          "price": 190,
+          "tag": "Hot / Iced"
+        },
+        {
+          "id": "c5",
+          "name": "Cappuccino",
+          "desc": "Two shots of espresso combined with equal parts steamed milk and airy foam.",
+          "price": 140,
+          "tag": "Hot"
+        }
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "id": 1,
+      "section": "resort",
+      "image": "images/resort/resort-pool.jpg",
+      "caption": "Swimming pool"
+    },
+    {
+      "id": 2,
+      "section": "resort",
+      "image": "images/resort/resort-garden.jpg",
+      "caption": "Garden grounds"
+    },
+    {
+      "id": 3,
+      "section": "resort",
+      "image": "images/resort/resort-cottage.jpg",
+      "caption": "Poolside cottage"
+    },
+    {
+      "id": 4,
+      "section": "resort",
+      "image": "images/resort/resort-room.jpg",
+      "caption": "Guest room"
+    },
+    {
+      "id": 5,
+      "section": "cafe",
+      "image": "images/cafe/cafe-interior.jpg",
+      "caption": "Cafe interior"
+    },
+    {
+      "id": 6,
+      "section": "cafe",
+      "image": "images/cafe/cafe-drinks.jpg",
+      "caption": "Drinks"
+    },
+    {
+      "id": 7,
+      "section": "cafe",
+      "image": "images/cafe/cafe-garden.jpg",
+      "caption": "Garden view"
+    }
+  ]
+}

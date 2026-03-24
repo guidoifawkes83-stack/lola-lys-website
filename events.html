@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events — Lola Lys Resort, Cafe & Events</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FAVICON -->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo">
+    <a href="index.html">
+      <img src="images/logo/logo.png" alt="Lola Lys" class="logo">
+    </a>
+  </div>
+  <div class="nav-right">
+    <a href="index.html">Home</a>
+    <a href="cafe.html">Cafe</a>
+    <a href="events.html">Events</a>
+    <a href="resort.html" class="active">Resort</a>
+    <div class="nav-divider"></div>
+    <a href="https://m.me/61556536748909" target="_blank" class="nav-btn">Book Now</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="cafe.html">Cafe</a>
+    <a href="events.html">Events</a>
+    <a href="resort.html">Resort</a>
+    <a href="tel:09771245687" class="mobile-menu-btn">Book Now</a>
+  </div>
+</nav>
+  <!-- EVENTS HERO BANNER -->
+  <section class="events-hero">
+    <div class="events-hero-overlay"></div>
+    <div class="events-hero-content">
+      <p class="events-eyebrow">Make it memorable</p>
+      <h1 class="events-hero-title">Events</h1>
+      <p class="events-hero-sub">Celebrate your biggest milestones at Lola Lys</p>
+    </div>
+  </section>
+
+  <!-- VENUE OVERVIEW -->
+  <div class="intro-strip">
+    <div class="intro-text">
+      <h2>A venue as special as the moment you're celebrating</h2>
+      <p>
+        From intimate graduations to full family gatherings, Lola Lys gives your celebration the setting
+        it deserves — lush greenery, cool Cavite air, and a team that genuinely wants your event to go well.
+        We handle the space so you can focus on the people.
+      </p>
+    </div>
+    <div class="intro-hours">
+      <p class="hours-label">Events start at</p>
+      <p class="hours-time">PHP 8,000</p>
+      <p class="hours-days">Contact us for full packages</p>
+    </div>
+  </div>
+
+  <!-- EVENT TYPES -->
+  <section class="event-types-section">
+    <div class="section-header">
+      <span class="section-eyebrow">What We Host</span>
+      <h2 class="section-title">Your Celebration, Our Space</h2>
+      <p class="section-desc">We specialize in making graduations and milestones feel truly special</p>
+    </div>
+    <div class="event-types-grid">
+
+      <div class="event-type-card">
+        <span class="event-type-icon">🎓</span>
+        <h3 class="event-type-name">Graduation Celebrations</h3>
+        <p class="event-type-desc">
+          You worked hard for that diploma — celebrate it properly. Lola Lys gives you a beautiful,
+          relaxed venue where your family and friends can toast to your achievement in style.
+          Pool access, good food, and plenty of space for photos and laughter.
+        </p>
+        <div class="event-type-tag">Our specialty</div>
+      </div>
+
+      <div class="event-type-card">
+        <span class="event-type-icon">🎂</span>
+        <h3 class="event-type-name">Birthday Parties</h3>
+        <p class="event-type-desc">
+          Whether it's a debut, a milestone birthday, or just a fun gathering with the barkada,
+          we've got the space and the vibe. Indoor and outdoor areas available depending on your
+          headcount and setup preference.
+        </p>
+        <div class="event-type-tag">All ages welcome</div>
+      </div>
+
+      <div class="event-type-card">
+        <span class="event-type-icon">👨‍👩‍👧‍👦</span>
+        <h3 class="event-type-name">Family Reunions</h3>
+        <p class="event-type-desc">
+          Get the whole clan together at a venue big enough for everyone and relaxed enough for
+          the lolas to enjoy too. Pool, garden, grilling area, and cafe all in one place — no need
+          to coordinate multiple venues.
+        </p>
+        <div class="event-type-tag">Groups of all sizes</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PACKAGES & PRICING -->
+  <section class="packages-section">
+    <div class="section-header">
+      <span class="section-eyebrow">Packages</span>
+      <h2 class="section-title">Simple Starting Rates</h2>
+      <p class="section-desc">Every event is different — reach out and we'll build the right package for you</p>
+    </div>
+
+
+    <div class="packages-grid">
+
+  <!-- RECEPTION HALL -->
+  <div class="package-card">
+    <div class="package-top">
+      <h3 class="package-name">Reception Hall</h3>
+      <p class="package-desc">Our largest venue — ideal for big celebrations and formal gatherings</p>
+    </div>
+    <div class="package-price">
+      <span class="package-starts">Starts at</span>
+      <span class="package-amount">PHP 60,000</span>
+    </div>
+    <ul class="package-includes">
+      <li>Capacity: up to 200 guests</li>
+      <li>Free use of Garden included</li>
+      <li>Available for full day events</li>
+      <li>On-site coordination support</li>
+      <li>Access to Lola Lys amenities</li>
+    </ul>
+    <a href="mailto:lolalys.resort01@gmail.com" class="package-btn">Inquire Now</a>
+  </div>
+
+  <!-- LOUNGE AREA -->
+  <div class="package-card">
+    <div class="package-top">
+      <h3 class="package-name">Lounge Area</h3>
+      <p class="package-desc">Intimate and stylish — perfect for smaller celebrations and gatherings</p>
+    </div>
+    <div class="package-price">
+      <span class="package-starts">Starts at</span>
+      <span class="package-amount">PHP 20,000</span>
+    </div>
+    <ul class="package-includes">
+      <li>Capacity: up to 80 guests</li>
+      <li>Free use of Garden included</li>
+      <li>Flexible setup options</li>
+      <li>On-site coordination support</li>
+      <li>Access to Lola Lys amenities</li>
+    </ul>
+    <a href="mailto:lolalys.resort01@gmail.com" class="package-btn">Inquire Now</a>
+  </div>
+
+  <!-- GARDEN -->
+  <div class="package-card">
+    <div class="package-top">
+      <h3 class="package-name">Garden</h3>
+      <p class="package-desc">Open air, lush greenery — great for casual outdoor celebrations</p>
+    </div>
+    <div class="package-price">
+      <span class="package-starts">Starts at</span>
+      <span class="package-amount">PHP 8,000</span>
+    </div>
+    <ul class="package-includes">
+      <li>Capacity: 20–80 guests</li>
+      <li>Free when booked with Reception Hall + Lounge</li>
+      <li>Flexible outdoor setup</li>
+      <li>On-site coordination support</li>
+      <li>Access to Lola Lys amenities</li>
+    </ul>
+    <a href="mailto:lolalys.resort01@gmail.com" class="package-btn">Inquire Now</a>
+  </div>
+
+</div>
+
+<!-- PROMO PACKAGES -->
+<div class="promo-banner">
+  <p class="promo-label">🔥 Limited Offer — Until April 30, 2026 Only</p>
+  <h3 class="promo-title">All-In Packages for 100 Guests</h3>
+  <p class="promo-desc">Everything included — venue, catering, styling, lights, sounds, photobooth, and more</p>
+</div>
+<div class="promo-grid">
+
+  <!-- PACKAGE A -->
+  <div class="promo-card">
+    <div class="promo-card-header">
+      <h3 class="promo-name">Package A</h3>
+      <p class="promo-guests">100 Guests</p>
+    </div>
+    <div class="promo-price-block">
+      <span class="promo-original">PHP 217,300</span>
+      <span class="promo-amount">PHP 207,000</span>
+      <span class="promo-unit">only</span>
+    </div>
+    <ul class="package-includes">
+      <li>Use of Reception Hall for 4 hours</li>
+      <li>Catering for 100 guests</li>
+      <li>Table and venue styling</li>
+      <li>LED wall</li>
+      <li>Lights and sounds</li>
+      <li>Mobile bar (cocktails for 100 pax)</li>
+      <li>Photobooth (2 hours)</li>
+      <li>Use of 2 airconditioned rooms</li>
+      <li>Use of Lola Lys amenities</li>
+    </ul>
+    <a href="mailto:lolalys.resort01@gmail.com" class="package-btn">Book Package A</a>
+  </div>
+
+  <!-- PACKAGE B -->
+  <div class="promo-card promo-card--featured">
+    <div class="promo-card-header">
+      <h3 class="promo-name">Package B</h3>
+      <p class="promo-guests">100 Guests</p>
+    </div>
+    <div class="promo-price-block">
+      <span class="promo-original">PHP 157,300</span>
+      <span class="promo-amount">PHP 147,000</span>
+      <span class="promo-unit">only</span>
+    </div>
+    <ul class="package-includes">
+      <li>Use of Reception Hall for 4 hours</li>
+      <li>Catering for 100 guests</li>
+      <li>Table and venue styling</li>
+      <li>LED wall</li>
+      <li>Lights and sounds</li>
+      <li>Mobile bar (cocktails for 100 pax)</li>
+      <li>Photobooth (2 hours)</li>
+      <li>Use of 2 airconditioned rooms</li>
+      <li>Use of Lola Lys amenities</li>
+    </ul>
+    <a href="mailto:lolalys.resort01@gmail.com" class="package-btn package-btn--light">Book Package B</a>
+  </div>
+
+</div>
+
+      <div class="package-card package-card--featured">
+        <div class="package-featured-badge">Best Value</div>
+        <div class="package-top">
+          <h3 class="package-name">Full Day Event</h3>
+          <p class="package-desc">All-day exclusive access — ideal for bigger celebrations and full family gatherings</p>
+        </div>
+        <div class="package-price">
+          <span class="package-starts">Starts at</span>
+          <span class="package-amount">PHP 15,000</span>
+        </div>
+        <ul class="package-includes">
+          <li>Exclusive venue use (full day)</li>
+          <li>Pool, garden & function hall</li>
+          <li>Full table, chair & tent setup</li>
+          <li>Cafe catering available (add-on)</li>
+          <li>Sound system (add-on)</li>
+          <li>On-site coordination support</li>
+        </ul>
+        <a href="mailto:lolalys.resort01@gmail.com" class="package-btn package-btn--light">Inquire Now</a>
+      </div>
+
+      <div class="package-card">
+        <div class="package-top">
+          <h3 class="package-name">Custom Package</h3>
+          <p class="package-desc">Have something specific in mind? Let's talk and build it around your needs</p>
+        </div>
+        <div class="package-price">
+          <span class="package-starts">Let's talk</span>
+          <span class="package-amount">Custom</span>
+        </div>
+        <ul class="package-includes">
+          <li>Flexible hours & setup</li>
+          <li>Choose your inclusions</li>
+          <li>Catering options available</li>
+          <li>Add-ons: sound, lights, decor</li>
+          <li>Tailored to your headcount</li>
+        </ul>
+        <a href="mailto:lolalys.resort01@gmail.com" class="package-btn">Inquire Now</a>
+      </div>
+
+    </div>
+    <p class="packages-disclaimer">* All packages are subject to availability and final confirmation. Prices may vary based on headcount, date, and add-ons. Contact us for a personalized quote.</p>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <section class="events-gallery-section" id="gallery">
+    <div class="section-header">
+      <span class="section-eyebrow">Past Events</span>
+      <h2 class="section-title">Moments We've Been Part Of</h2>
+      <p class="section-desc">Every photo here is a celebration we helped make happen</p>
+    </div>
+    <div class="events-gallery-grid">
+      <div class="events-gallery-item events-gallery-item--large">
+        <img src="images/events/events-photo-1.jpg" alt="Event at Lola Lys">
+      </div>
+      <div class="events-gallery-item">
+        <img src="images/events/events-photo-2.jpg" alt="Event at Lola Lys">
+      </div>
+      <div class="events-gallery-item">
+        <img src="images/events/events-photo-3.jpg" alt="Event at Lola Lys">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="events-cta-section">
+    <div class="events-cta-content">
+      <p class="events-cta-eyebrow">Ready to celebrate?</p>
+      <h2 class="events-cta-title">Let's make it happen</h2>
+      <p class="events-cta-desc">
+        Send us a message or give us a call — tell us your date, your headcount, and what you're
+        celebrating. We'll take it from there.
+      </p>
+      <div class="events-cta-buttons">
+        <a href="tel:09771245687" class="btn-primary">Call Us Now</a>
+        <a href="mailto:lolalys.resort01@gmail.com" class="btn-outline">Send an Inquiry</a>
+      </div>
+      <p class="cta-note">We typically respond within 24 hours</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+  <span>© 2026 Lola Lys Resort, Cafe & Events</span>
+  <span>D. Gonzales St., Anuling Cerca 1, Mendez, Cavite</span>
+  <span>lolalys.resort01@gmail.com · 09771245687</span>
+  <a href="https://maps.google.com/?q=D.+Gonzales+St.,+Anuling+Cerca+1,+Mendez,+Cavite" target="_blank" class="footer-map">📍 Get Directions</a>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

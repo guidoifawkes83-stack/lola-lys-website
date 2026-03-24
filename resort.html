@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resort — Lola Lys Resort, Cafe & Events</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- FAVICON -->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+ <nav class="navbar">
+  <div class="nav-logo">
+    <a href="index.html">
+      <img src="images/logo/logo.png" alt="Lola Lys" class="logo">
+    </a>
+  </div>
+  <div class="nav-right">
+    <a href="index.html">Home</a>
+    <a href="cafe.html">Cafe</a>
+    <a href="events.html">Events</a>
+    <a href="resort.html" class="active">Resort</a>
+    <div class="nav-divider"></div>
+    <a href="https://m.me/61556536748909" target="_blank" class="nav-btn">Book Now</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="cafe.html">Cafe</a>
+    <a href="events.html">Events</a>
+    <a href="resort.html">Resort</a>
+    <a href="tel:09771245687" class="mobile-menu-btn">Book Now</a>
+  </div>
+</nav>
+
+  <!-- RESORT HERO BANNER -->
+  <section class="resort-hero">
+    <div class="resort-hero-overlay"></div>
+    <div class="resort-hero-content">
+      <p class="resort-eyebrow">Your getaway awaits</p>
+      <h1 class="resort-hero-title">The Resort</h1>
+      <p class="resort-hero-sub">Cool air, open skies, and a pool that feels like a reward</p>
+    </div>
+  </section>
+
+  <!-- RESORT OVERVIEW -->
+  <div class="intro-strip">
+    <div class="intro-text">
+      <h2>A true escape just minutes from Tagaytay</h2>
+      <p>
+        Lola Lys Resort sits quietly in Mendez, Cavite — close enough to Tagaytay for the cool breeze,
+        far enough from the crowd for the peace. Whether you're coming for a day trip or staying overnight,
+        the resort is your place to slow down, swim, and breathe.
+      </p>
+    </div>
+    <div class="intro-hours">
+      <p class="hours-label">Open Daily</p>
+      <p class="hours-time">6:00 AM – 10:00 PM</p>
+      <p class="hours-days">Monday to Sunday</p>
+    </div>
+  </div>
+
+  <!-- RATES SECTION -->
+<!-- RATES SECTION -->
+  <section class="rates-section">
+    <div class="section-header">
+      <span class="section-eyebrow">Pricing</span>
+      <h2 class="section-title">Simple, Honest Rates</h2>
+      <p class="section-desc">No hidden charges — just good value for a great experience</p>
+    </div>
+    <div id="rates-container" class="rates-grid">
+      <!-- Rates will load here from data.json -->
+    </div>
+  </section>
+
+      <!-- DAY TRIP -->
+      <div class="rate-card">
+        <div class="rate-card-top">
+          <span class="rate-icon">☀️</span>
+          <h3 class="rate-type">Day Trip</h3>
+          <p class="rate-desc">Perfect for families, barkadas, and groups looking for a quick cool escape</p>
+        </div>
+        <div class="rate-price-block">
+          <span class="rate-amount">PHP 150</span>
+          <span class="rate-unit">/ person</span>
+        </div>
+        <ul class="rate-includes">
+          <li>Full pool access</li>
+          <li>Use of resort grounds</li>
+          <li>Restroom & shower facilities</li>
+          <li>Access to cafe for orders</li>
+        </ul>
+        <p class="rate-note">* Day trip hours: 8:00 AM – 6:00 PM</p>
+      </div>
+
+      <!-- FAMILY ROOM -->
+      <div class="rate-card rate-card--featured">
+        <div class="rate-featured-badge">Most Popular</div>
+        <div class="rate-card-top">
+          <span class="rate-icon">🛏️</span>
+          <h3 class="rate-type">Family Room</h3>
+          <p class="rate-desc">Comfortable room good for 2 guests, accommodates up to 4</p>
+        </div>
+        <div class="rate-price-block">
+          <span class="rate-amount">PHP 1,500</span>
+          <span class="rate-unit">/ night</span>
+        </div>
+        <ul class="rate-includes">
+          <li>Good for 2 pax (max of 4)</li>
+          <li>Linens, towels & toiletries</li>
+          <li>Shampoo, soap, toothbrush & toothpaste</li>
+          <li>Full access to Lola Lys amenities</li>
+          <li>Check-in 2PM / Check-out 12NN</li>
+        </ul>
+        <p class="rate-note">* Rates subject to change. Contact us to confirm availability.</p>
+      </div>
+
+      <!-- JUNIOR ROOM -->
+      <div class="rate-card">
+        <div class="rate-card-top">
+          <span class="rate-icon">🛏️</span>
+          <h3 class="rate-type">Junior Room</h3>
+          <p class="rate-desc">Cozy room good for 2 guests, accommodates up to 3</p>
+        </div>
+        <div class="rate-price-block">
+          <span class="rate-amount">PHP 1,500</span>
+          <span class="rate-unit">/ night</span>
+        </div>
+        <ul class="rate-includes">
+          <li>Good for 2 pax (max of 3)</li>
+          <li>Linens, towels & toiletries</li>
+          <li>Shampoo, soap, toothbrush & toothpaste</li>
+          <li>Full access to Lola Lys amenities</li>
+          <li>Check-in 2PM / Check-out 12NN</li>
+        </ul>
+        <p class="rate-note">* Rates subject to change. Contact us to confirm availability.</p>
+      </div>
+
+      <!-- POOLSIDE COTTAGE -->
+      <div class="rate-card">
+        <div class="rate-card-top">
+          <span class="rate-icon">🏡</span>
+          <h3 class="rate-type">Poolside Cottage</h3>
+          <p class="rate-desc">Spacious cottage right by the pool — ideal for bigger groups</p>
+        </div>
+        <div class="rate-price-block">
+          <span class="rate-amount">PHP 1,500</span>
+          <span class="rate-unit">/ cottage</span>
+        </div>
+        <ul class="rate-includes">
+          <li>Good for 10 pax (max of 12)</li>
+          <li>Full access to Lola Lys amenities</li>
+          <li>Pool & garden access</li>
+          <li>Access to cafe for orders</li>
+        </ul>
+        <p class="rate-note">* All accommodations include access to Lola Lys amenities.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AMENITIES & ACTIVITIES -->
+  <section class="amenities-section">
+    <div class="section-header">
+      <span class="section-eyebrow">What's Here</span>
+      <h2 class="section-title">Amenities & Activities</h2>
+      <p class="section-desc">Everything you need for a full day — or a full weekend</p>
+    </div>
+    <div class="amenities-grid">
+
+      <div class="amenity-item">
+        <span class="amenity-icon">🏊</span>
+        <h4 class="amenity-name">Swimming Pool</h4>
+        <p class="amenity-desc">Our centerpiece — a clean, well-maintained pool surrounded by lush greenery and cool Cavite air.</p>
+      </div>
+
+      <div class="amenity-item">
+        <span class="amenity-icon">⛳</span>
+        <h4 class="amenity-name">Mini Golf</h4>
+        <p class="amenity-desc">A fun mini golf course for all ages — great for families and groups looking for something beyond the pool.</p>
+      </div>
+
+      <div class="amenity-item">
+        <span class="amenity-icon">🎱</span>
+        <h4 class="amenity-name">Billiards</h4>
+        <p class="amenity-desc">Challenge your barkada to a game of billiards — a classic way to unwind between dips in the pool.</p>
+      </div>
+
+      <div class="amenity-item">
+        <span class="amenity-icon">🏀</span>
+        <h4 class="amenity-name">Basketball</h4>
+        <p class="amenity-desc">Full basketball court available for guests. Perfect for burning energy before settling in for the evening.</p>
+      </div>
+
+      <div class="amenity-item">
+        <span class="amenity-icon">🎳</span>
+        <h4 class="amenity-name">Bowling</h4>
+        <p class="amenity-desc">Bowling lanes on-site — a crowd favorite for groups and families of all ages.</p>
+      </div>
+
+      <div class="amenity-item">
+        <span class="amenity-icon">🎤</span>
+        <h4 class="amenity-name">Karaoke</h4>
+        <p class="amenity-desc">No Filipino getaway is complete without karaoke. Belt out your favorites with the whole group.</p>
+      </div>
+
+      <div class="amenity-item">
+        <span class="amenity-icon">💪</span>
+        <h4 class="amenity-name">Gym</h4>
+        <p class="amenity-desc">A basic gym facility available for guests who want to keep their routine even on vacation.</p>
+      </div>
+
+      <div class="amenity-item">
+        <span class="amenity-icon">🌄</span>
+        <h4 class="amenity-name">And Much More</h4>
+        <p class="amenity-desc">More activities and facilities await — come visit and discover everything Lola Lys has to offer.</p>
+      </div>
+
+    </div>
+  </section>
+
+<!-- RESORT GALLERY -->
+<section class="gallery-section">
+  <div class="section-header">
+    <span class="section-eyebrow">Take a Look Around</span>
+    <h2 class="section-title">The Resort</h2>
+    <p class="section-desc">Cool air, lush greens, and a pool waiting for you</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item"><div class="gallery-placeholder"><span>🏊</span><p>Swimming pool</p></div></div>
+    <div class="gallery-item"><div class="gallery-placeholder"><span>🌿</span><p>Garden grounds</p></div></div>
+    <div class="gallery-item"><div class="gallery-placeholder"><span>🏡</span><p>Poolside cottage</p></div></div>
+    <div class="gallery-item"><div class="gallery-placeholder"><span>🛏️</span><p>Guest room</p></div></div>
+    <div class="gallery-item"><div class="gallery-placeholder"><span>🌄</span><p>Scenic view</p></div></div>
+    <div class="gallery-item"><div class="gallery-placeholder"><span>🌙</span><p>Night ambiance</p></div></div>
+  </div>
+</section>
+
+  <!-- DIRECTIONS CTA -->
+  <section class="directions-section">
+    <div class="directions-text">
+      <span class="section-eyebrow">Plan Your Visit</span>
+      <h2>Ready to unwind?<br>We're easy to find.</h2>
+      <p>
+        Located in Mendez, Cavite — just minutes from the Tagaytay rotonda. A quick drive from Metro Manila
+        and worth every kilometer. Call us to reserve your slot or ask for directions.
+      </p>
+      <div class="directions-detail">
+        <div class="directions-row">
+          <span class="directions-icon">📍</span>
+          <span>D. Gonzales St., Anuling Cerca 1, Mendez, Cavite</span>
+        </div>
+        <div class="directions-row">
+          <span class="directions-icon">🚗</span>
+          <span>Approximately 1.5 – 2 hours from Metro Manila via SLEX or Aguinaldo Highway</span>
+        </div>
+        <div class="directions-row">
+          <span class="directions-icon">📞</span>
+          <span>09771245687 — call or text to reserve or ask for directions</span>
+        </div>
+        <div class="directions-row">
+          <span class="directions-icon">✉️</span>
+          <span>lolalys.resort01@gmail.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="directions-cta">
+      <a href="tel:09771245687" class="btn-primary">Reserve Now</a>
+      <a href="mailto:lolalys.resort01@gmail.com" class="btn-outline">Send an Inquiry</a>
+      <p class="cta-note">Walk-ins welcome subject to availability</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>© 2026 Lola Lys Resort, Cafe & Events</span>
+    <span>D. Gonzales St., Anuling Cerca 1, Mendez, Cavite</span>
+    <span>lolalys.resort01@gmail.com · 09771245687</span>
+    <a href="https://maps.google.com/?q=D.+Gonzales+St.,+Anuling+Cerca+1,+Mendez,+Cavite" target="_blank" class="footer-map">📍 Get Directions</a>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
