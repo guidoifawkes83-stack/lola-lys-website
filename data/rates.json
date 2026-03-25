@@ -5,7 +5,7 @@
       "icon": "☀️",
       "type": "Day Trip",
       "desc": "Perfect for families, barkadas, and groups looking for a quick cool escape",
-      "price": 150,
+      "price": 250,
       "unit": "/ person",
       "includes": [
         "Full pool access",
@@ -16,14 +16,9 @@
       "note": "* Day trip hours: 8:00 AM – 6:00 PM"
     },
     {
-      "id": 2,
-      "icon": "🛏️",
-      "type": "Family Room",
-      "desc": "Comfortable room good for 2 guests, accommodates up to 4",
-      "price": 1500,
-      "unit": "/ night",
-      "featured": true,
       "badge": "Most Popular",
+      "unit": "/ night",
+      "price": 1500,
       "includes": [
         "Good for 2 pax (max of 4)",
         "Linens, towels & toiletries",
@@ -31,7 +26,12 @@
         "Full access to Lola Lys amenities",
         "Check-in 2PM / Check-out 12NN"
       ],
-      "note": "* Rates subject to change. Contact us to confirm availability."
+      "featured": true,
+      "desc": "Comfortable room good for 2 guests, accommodates up to 4",
+      "note": "* Rates subject to change. Contact us to confirm availability.",
+      "icon": "🛏️",
+      "type": "Family Room",
+      "id": 2
     },
     {
       "id": 3,
