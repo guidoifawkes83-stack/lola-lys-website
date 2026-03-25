@@ -1082,8 +1082,8 @@ a.card-btn {
   transform: translateY(-4px);
 }
 .package-card--featured {
-  background: #1a1a0a;
-  border-color: #1a1a0a;
+  background: #2e2e1a;
+  border-color: #F4D03F;
   transform: translateY(-8px);
 }
 .package-card--featured:hover { transform: translateY(-12px); }
