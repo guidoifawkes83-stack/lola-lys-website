@@ -8,41 +8,38 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <!-- FAVICON -->
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
 </head>
 <body>
 
   <!-- NAVBAR -->
- <nav class="navbar">
-  <div class="nav-logo">
-    <a href="index.html">
-      <img src="images/logo/logo.png" alt="Lola Lys" class="logo">
-    </a>
-  </div>
-  <div class="nav-right">
-    <a href="index.html">Home</a>
-    <a href="cafe.html">Cafe</a>
-    <a href="events.html">Events</a>
-    <a href="resort.html" class="active">Resort</a>
-    <div class="nav-divider"></div>
-    <a href="https://m.me/Estoce123?ref=website_booknow" target="_blank" class="nav-btn">Book Now</a>
-  </div>
-  <button class="hamburger" id="hamburger" aria-label="Open menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-  <div class="mobile-menu" id="mobileMenu">href="https://m.me/Estoce123?ref=website_booknow"
-    <a href="index.html">Home</a>
-    <a href="cafe.html">Cafe</a>
-    <a href="events.html">Events</a>
-    <a href="resort.html">Resort</a>
-    <a href="https://m.me/61556536748909" target="_blank" class="mobile-menu-btn">Book Now</a>
-  </div>
-</nav>
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html">
+        <img src="images/logo/logo.png" alt="Lola Lys" class="logo">
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="cafe.html" class="active">Cafe</a>
+      <a href="events.html">Events</a>
+      <a href="resort.html">Resort</a>
+      <div class="nav-divider"></div>
+      <a href="https://m.me/Estoce123?ref=website_booknow" target="_blank" class="nav-btn">Book Now</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="cafe.html">Cafe</a>
+      <a href="events.html">Events</a>
+      <a href="resort.html">Resort</a>
+      <a href="https://m.me/Estoce123?ref=website_booknow" target="_blank" class="mobile-menu-btn">Book Now</a>
+    </div>
+  </nav>
 
   <!-- CAFE HERO BANNER -->
   <section class="cafe-hero">
@@ -71,31 +68,29 @@
     </div>
   </div>
 
-<!-- MENU SECTION -->
-<section class="dishes-section">
-  <div class="section-header">
-    <span class="section-eyebrow">What we serve</span>
-    <h2 class="section-title">Our Menu</h2>
-    <p class="section-desc">Fresh, honest food — from pasta to pizza to your morning brew</p>
-  </div>
-
-  <div id="menu-container">
-    <!-- Menu categories will load here from data.json -->
-  </div>
-
-</section>
+  <!-- MENU SECTION -->
+  <section class="dishes-section">
+    <div class="section-header">
+      <span class="section-eyebrow">What we serve</span>
+      <h2 class="section-title">Our Menu</h2>
+      <p class="section-desc">Fresh, honest food — from pasta to pizza to your morning brew</p>
+    </div>
+    <div id="menu-container">
+      <!-- Menu categories will load here from cafe-menu.json -->
+    </div>
+  </section>
 
   <!-- AMBIANCE GALLERY -->
-<section class="gallery-section">
-  <div class="section-header">
-    <span class="section-eyebrow">The Atmosphere</span>
-    <h2 class="section-title">Feel the Vibe</h2>
-    <p class="section-desc">Rustic, relaxed, and always breezy — just the way a good cafe should be</p>
-  </div>
-  <div id="cafe-gallery-container" class="gallery-grid">
-    <!-- Cafe gallery will load here from data.json -->
-  </div>
-</section>
+  <section class="gallery-section">
+    <div class="section-header">
+      <span class="section-eyebrow">The Atmosphere</span>
+      <h2 class="section-title">Feel the Vibe</h2>
+      <p class="section-desc">Rustic, relaxed, and always breezy — just the way a good cafe should be</p>
+    </div>
+    <div id="cafe-gallery-container" class="gallery-grid">
+      <!-- Cafe gallery will load here from gallery-cafe.json -->
+    </div>
+  </section>
 
   <!-- DIRECTIONS CTA -->
   <section class="directions-section">
@@ -140,6 +135,7 @@
     <span>lolalys.resort01@gmail.com · 09771245687</span>
     <a href="https://maps.google.com/?q=D.+Gonzales+St.,+Anuling+Cerca+1,+Mendez,+Cavite" target="_blank" class="footer-map">📍 Get Directions</a>
   </footer>
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>

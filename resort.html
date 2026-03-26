@@ -8,40 +8,38 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <!-- FAVICON -->
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
 </head>
 <body>
 
   <!-- NAVBAR -->
- <nav class="navbar">
-  <div class="nav-logo">
-    <a href="index.html">
-      <img src="images/logo/logo.png" alt="Lola Lys" class="logo">
-    </a>
-  </div>
-  <div class="nav-right">
-    <a href="index.html">Home</a>
-    <a href="cafe.html">Cafe</a>
-    <a href="events.html">Events</a>
-    <a href="resort.html" class="active">Resort</a>
-    <div class="nav-divider"></div>
-    <a href="https://m.me/Estoce123?ref=website_booknow" target="_blank" class="nav-btn">Book Now</a>
-  </div>
-  <button class="hamburger" id="hamburger" aria-label="Open menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="index.html">Home</a>
-    <a href="cafe.html">Cafe</a>
-    <a href="events.html">Events</a>
-    <a href="resort.html">Resort</a>
-    <a href="https://m.me/Estoce123?ref=website_booknow" target="_blank" class="mobile-menu-btn">Book Now</a>
-  </div>
-</nav>
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html">
+        <img src="images/logo/logo.png" alt="Lola Lys" class="logo">
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="cafe.html">Cafe</a>
+      <a href="events.html">Events</a>
+      <a href="resort.html" class="active">Resort</a>
+      <div class="nav-divider"></div>
+      <a href="https://m.me/Estoce123?ref=website_booknow" target="_blank" class="nav-btn">Book Now</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="cafe.html">Cafe</a>
+      <a href="events.html">Events</a>
+      <a href="resort.html">Resort</a>
+      <a href="https://m.me/Estoce123?ref=website_booknow" target="_blank" class="mobile-menu-btn">Book Now</a>
+    </div>
+  </nav>
 
   <!-- RESORT HERO BANNER -->
   <section class="resort-hero">
@@ -70,7 +68,7 @@
     </div>
   </div>
 
-<!-- RATES SECTION -->
+  <!-- RATES SECTION -->
   <section class="rates-section">
     <div class="section-header">
       <span class="section-eyebrow">Pricing</span>
@@ -78,13 +76,9 @@
       <p class="section-desc">No hidden charges — just good value for a great experience</p>
     </div>
     <div id="rates-container" class="rates-grid">
-      <!-- Rates will load here from data.json -->
+      <!-- Rates will load here from rates.json -->
     </div>
   </section>
-
-     
-      
-
 
   <!-- AMENITIES & ACTIVITIES -->
   <section class="amenities-section">
@@ -94,69 +88,60 @@
       <p class="section-desc">Everything you need for a full day — or a full weekend</p>
     </div>
     <div class="amenities-grid">
-
       <div class="amenity-item">
         <span class="amenity-icon">🏊</span>
         <h4 class="amenity-name">Swimming Pool</h4>
         <p class="amenity-desc">Our centerpiece — a clean, well-maintained pool surrounded by lush greenery and cool Cavite air.</p>
       </div>
-
       <div class="amenity-item">
         <span class="amenity-icon">⛳</span>
         <h4 class="amenity-name">Mini Golf</h4>
         <p class="amenity-desc">A fun mini golf course for all ages — great for families and groups looking for something beyond the pool.</p>
       </div>
-
       <div class="amenity-item">
         <span class="amenity-icon">🎱</span>
         <h4 class="amenity-name">Billiards</h4>
         <p class="amenity-desc">Challenge your barkada to a game of billiards — a classic way to unwind between dips in the pool.</p>
       </div>
-
       <div class="amenity-item">
         <span class="amenity-icon">🏀</span>
         <h4 class="amenity-name">Basketball</h4>
         <p class="amenity-desc">Full basketball court available for guests. Perfect for burning energy before settling in for the evening.</p>
       </div>
-
       <div class="amenity-item">
         <span class="amenity-icon">🎳</span>
         <h4 class="amenity-name">Bowling</h4>
         <p class="amenity-desc">Bowling lanes on-site — a crowd favorite for groups and families of all ages.</p>
       </div>
-
       <div class="amenity-item">
         <span class="amenity-icon">🎤</span>
         <h4 class="amenity-name">Karaoke</h4>
         <p class="amenity-desc">No Filipino getaway is complete without karaoke. Belt out your favorites with the whole group.</p>
       </div>
-
       <div class="amenity-item">
         <span class="amenity-icon">💪</span>
         <h4 class="amenity-name">Gym</h4>
         <p class="amenity-desc">A basic gym facility available for guests who want to keep their routine even on vacation.</p>
       </div>
-
       <div class="amenity-item">
         <span class="amenity-icon">🌄</span>
         <h4 class="amenity-name">And Much More</h4>
         <p class="amenity-desc">More activities and facilities await — come visit and discover everything Lola Lys has to offer.</p>
       </div>
-
     </div>
   </section>
 
-<!-- RESORT GALLERY -->
-<section class="gallery-section">
-  <div class="section-header">
-    <span class="section-eyebrow">Take a Look Around</span>
-    <h2 class="section-title">The Resort</h2>
-    <p class="section-desc">Cool air, lush greens, and a pool waiting for you</p>
-  </div>
-  <div id="resort-gallery-container" class="gallery-grid">
-    <!-- Resort gallery will load here from data.json -->
-  </div>
-</section>
+  <!-- RESORT GALLERY -->
+  <section class="gallery-section">
+    <div class="section-header">
+      <span class="section-eyebrow">Take a Look Around</span>
+      <h2 class="section-title">The Resort</h2>
+      <p class="section-desc">Cool air, lush greens, and a pool waiting for you</p>
+    </div>
+    <div id="resort-gallery-container" class="gallery-grid">
+      <!-- Resort gallery will load here from gallery-resort.json -->
+    </div>
+  </section>
 
   <!-- DIRECTIONS CTA -->
   <section class="directions-section">
@@ -200,6 +185,7 @@
     <span>lolalys.resort01@gmail.com · 09771245687</span>
     <a href="https://maps.google.com/?q=D.+Gonzales+St.,+Anuling+Cerca+1,+Mendez,+Cavite" target="_blank" class="footer-map">📍 Get Directions</a>
   </footer>
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>

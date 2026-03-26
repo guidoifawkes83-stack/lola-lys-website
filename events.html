@@ -8,41 +8,39 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-  <!-- FAVICON -->
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
 </head>
 <body>
 
   <!-- NAVBAR -->
-<nav class="navbar">
-  <div class="nav-logo">
-    <a href="index.html">
-      <img src="images/logo/logo.png" alt="Lola Lys" class="logo">
-    </a>
-  </div>
-  <div class="nav-right">
-    <a href="index.html">Home</a>
-    <a href="cafe.html">Cafe</a>
-    <a href="events.html">Events</a>
-    <a href="resort.html" class="active">Resort</a>
-    <div class="nav-divider"></div>
-    <a  target="_blank" class="nav-btn">Book Now</a>
-  </div>
-  <button class="hamburger" id="hamburger" aria-label="Open menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="index.html">Home</a>
-    <a href="cafe.html">Cafe</a>
-    <a href="events.html">Events</a>
-    <a href="resort.html">Resort</a>
-    <a href="https://m.me/Estoce123?ref=website_booknow" target="_blank" class="mobile-menu-btn">Book Now</a>
-  </div>
-</nav>
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html">
+        <img src="images/logo/logo.png" alt="Lola Lys" class="logo">
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="cafe.html">Cafe</a>
+      <a href="events.html" class="active">Events</a>
+      <a href="resort.html">Resort</a>
+      <div class="nav-divider"></div>
+      <a href="https://m.me/Estoce123?ref=website_booknow" target="_blank" class="nav-btn">Book Now</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="cafe.html">Cafe</a>
+      <a href="events.html">Events</a>
+      <a href="resort.html">Resort</a>
+      <a href="https://m.me/Estoce123?ref=website_booknow" target="_blank" class="mobile-menu-btn">Book Now</a>
+    </div>
+  </nav>
+
   <!-- EVENTS HERO BANNER -->
   <section class="events-hero">
     <div class="events-hero-overlay"></div>
@@ -78,7 +76,6 @@
       <p class="section-desc">We specialize in making graduations and milestones feel truly special</p>
     </div>
     <div class="event-types-grid">
-
       <div class="event-type-card">
         <span class="event-type-icon">🎓</span>
         <h3 class="event-type-name">Graduation Celebrations</h3>
@@ -89,7 +86,6 @@
         </p>
         <div class="event-type-tag">Our specialty</div>
       </div>
-
       <div class="event-type-card">
         <span class="event-type-icon">🎂</span>
         <h3 class="event-type-name">Birthday Parties</h3>
@@ -100,7 +96,6 @@
         </p>
         <div class="event-type-tag">All ages welcome</div>
       </div>
-
       <div class="event-type-card">
         <span class="event-type-icon">👨‍👩‍👧‍👦</span>
         <h3 class="event-type-name">Family Reunions</h3>
@@ -111,7 +106,6 @@
         </p>
         <div class="event-type-tag">Groups of all sizes</div>
       </div>
-
     </div>
   </section>
 
@@ -122,36 +116,34 @@
       <h2 class="section-title">Simple Starting Rates</h2>
       <p class="section-desc">Every event is different — reach out and we'll build the right package for you</p>
     </div>
-
-
     <div id="packages-container" class="packages-grid">
-      <!-- Event packages will load here from data.json -->
+      <!-- Event packages will load here from event-packages.json -->
     </div>
 
-<!-- PROMO PACKAGES -->
-<div class="promo-banner">
-  <p class="promo-label">🔥 Limited Offer — Until April 30, 2026 Only</p>
-  <h3 class="promo-title">All-In Packages for 100 Guests</h3>
-  <p class="promo-desc">Everything included — venue, catering, styling, lights, sounds, photobooth, and more</p>
-</div>
-<div id="promo-container" class="promo-grid">
-  <!-- Promo packages will load here from data.json -->
-</div>
+    <!-- PROMO PACKAGES -->
+    <div class="promo-banner">
+      <p class="promo-label">🔥 Limited Offer — Until April 30, 2026 Only</p>
+      <h3 class="promo-title">All-In Packages for 100 Guests</h3>
+      <p class="promo-desc">Everything included — venue, catering, styling, lights, sounds, photobooth, and more</p>
+    </div>
+    <div id="promo-container" class="promo-grid">
+      <!-- Promo packages will load here from promo-packages.json -->
+    </div>
 
     <p class="packages-disclaimer">* All packages are subject to availability and final confirmation. Prices may vary based on headcount, date, and add-ons. Contact us for a personalized quote.</p>
   </section>
 
   <!-- PHOTO GALLERY -->
-<section class="events-gallery-section" id="gallery">
-  <div class="section-header">
-    <span class="section-eyebrow">Past Events</span>
-    <h2 class="section-title">Moments We've Been Part Of</h2>
-    <p class="section-desc">Every photo here is a celebration we helped make happen</p>
-  </div>
-  <div id="events-gallery-container" class="events-gallery-grid">
-    <!-- Events gallery will load here from data.json -->
-  </div>
-</section>
+  <section class="events-gallery-section" id="gallery">
+    <div class="section-header">
+      <span class="section-eyebrow">Past Events</span>
+      <h2 class="section-title">Moments We've Been Part Of</h2>
+      <p class="section-desc">Every photo here is a celebration we helped make happen</p>
+    </div>
+    <div id="events-gallery-container" class="events-gallery-grid">
+      <!-- Events gallery will load here from gallery-events.json -->
+    </div>
+  </section>
 
   <!-- CTA STRIP -->
   <section class="events-cta-section">
@@ -172,11 +164,12 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-  <span>© 2026 Lola Lys Resort, Cafe & Events</span>
-  <span>D. Gonzales St., Anuling Cerca 1, Mendez, Cavite</span>
-  <span>lolalys.resort01@gmail.com · 09771245687</span>
-  <a href="https://maps.google.com/?q=D.+Gonzales+St.,+Anuling+Cerca+1,+Mendez,+Cavite" target="_blank" class="footer-map">📍 Get Directions</a>
-</footer>
-<script src="script.js"></script>
+    <span>© 2026 Lola Lys Resort, Cafe & Events</span>
+    <span>D. Gonzales St., Anuling Cerca 1, Mendez, Cavite</span>
+    <span>lolalys.resort01@gmail.com · 09771245687</span>
+    <a href="https://maps.google.com/?q=D.+Gonzales+St.,+Anuling+Cerca+1,+Mendez,+Cavite" target="_blank" class="footer-map">📍 Get Directions</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

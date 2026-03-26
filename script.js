@@ -39,6 +39,37 @@ if (hamburger && mobileMenu) {
   });
 }
 
+// ─── LIGHTBOX ───────────────────────────────────────────────
+const lightbox = document.createElement('div');
+lightbox.id = 'lightbox';
+lightbox.innerHTML = `
+  <div class="lightbox-overlay"></div>
+  <div class="lightbox-box">
+    <button class="lightbox-close">✕</button>
+    <img class="lightbox-img" src="" alt="">
+    <p class="lightbox-caption"></p>
+  </div>
+`;
+document.body.appendChild(lightbox);
+
+function openLightbox(src, caption) {
+  lightbox.querySelector('.lightbox-img').src = src;
+  lightbox.querySelector('.lightbox-caption').textContent = caption || '';
+  lightbox.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+lightbox.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+lightbox.querySelector('.lightbox-overlay').addEventListener('click', closeLightbox);
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeLightbox();
+});
+
 // ─── HELPER ─────────────────────────────────────────────────
 function fetchJSON(path) {
   return fetch(path).then(r => {
@@ -54,10 +85,8 @@ if (ratesContainer) {
     data.rates.forEach(rate => {
       const card = document.createElement('div');
       card.className = 'rate-card';
-
       let badgeHTML = rate.featured ? `<div class="rate-featured-badge">${rate.badge}</div>` : '';
       const includesList = rate.includes.map(i => `<li>${i}</li>`).join('');
-
       card.innerHTML = `
         ${badgeHTML}
         <div class="rate-card-top">
@@ -77,7 +106,7 @@ if (ratesContainer) {
   }).catch(e => console.error(e));
 }
 
-// ─── CAFE MENU ──────────────────────────────────────────────
+// ─── CAFE MENU (with thumbnails) ────────────────────────────
 const menuContainer = document.getElementById('menu-container');
 if (menuContainer) {
   fetchJSON('data/cafe-menu.json').then(data => {
@@ -100,14 +129,22 @@ if (menuContainer) {
 
         const badgeHTML = item.badge ? `<span class="menu-badge">${item.badge}</span>` : '';
         const tagHTML = item.tag ? `<span class="menu-tag">${item.tag}</span>` : '';
+        const thumbSrc = item.image || `https://placehold.co/80x80/2a1a0a/F4D03F?text=${encodeURIComponent(item.name)}`;
+        const fullSrc = item.image || `https://placehold.co/800x500/2a1a0a/F4D03F?text=${encodeURIComponent(item.name)}`;
 
         el.innerHTML = `
+          <img class="menu-item-thumb" src="${thumbSrc}" alt="${item.name}" loading="lazy">
           <div class="menu-item-info">
             <h4 class="menu-item-name">${item.name} ${badgeHTML} ${tagHTML}</h4>
             <p class="menu-item-desc">${item.desc}</p>
           </div>
           <span class="menu-item-price">₱${item.price}</span>
         `;
+
+        el.querySelector('.menu-item-thumb').addEventListener('click', function() {
+          openLightbox(fullSrc, item.name);
+        });
+
         grid.appendChild(el);
       });
 
@@ -125,13 +162,11 @@ if (packagesContainer) {
       const card = document.createElement('div');
       card.className = 'package-card';
       if (pkg.featured) card.classList.add('package-card--featured');
-
       const badgeHTML = pkg.badge ? `<div class="package-badge">${pkg.badge}</div>` : '';
       const includesList = pkg.includes.map(i => `<li>${i}</li>`).join('');
       const priceHTML = pkg.startPrice
         ? `<span class="package-price">Starts at PHP ${pkg.startPrice.toLocaleString()}</span>`
         : `<span class="package-price">Let's talk</span>`;
-
       card.innerHTML = `
         ${badgeHTML}
         <div class="package-card-top">
@@ -156,9 +191,7 @@ if (promoContainer) {
       const card = document.createElement('div');
       card.className = 'promo-card';
       if (pkg.featured) card.classList.add('promo-card--featured');
-
       const includesList = pkg.includes.map(i => `<li>${i}</li>`).join('');
-
       card.innerHTML = `
         <div class="promo-card-header">
           <h3 class="promo-name">${pkg.name}</h3>
@@ -177,7 +210,7 @@ if (promoContainer) {
   }).catch(e => console.error(e));
 }
 
-// ─── RESORT GALLERY ─────────────────────────────────────────
+// ─── RESORT GALLERY (with lightbox) ─────────────────────────
 const resortGallery = document.getElementById('resort-gallery-container');
 if (resortGallery) {
   fetchJSON('data/gallery-resort.json').then(data => {
@@ -185,12 +218,15 @@ if (resortGallery) {
       const item = document.createElement('div');
       item.className = 'gallery-item';
       item.innerHTML = `<img src="${photo.image}" alt="${photo.caption}" loading="lazy"><p>${photo.caption}</p>`;
+      item.querySelector('img').addEventListener('click', function() {
+        openLightbox(photo.image, photo.caption);
+      });
       resortGallery.appendChild(item);
     });
   }).catch(e => console.error(e));
 }
 
-// ─── CAFE GALLERY ───────────────────────────────────────────
+// ─── CAFE GALLERY (with lightbox) ───────────────────────────
 const cafeGallery = document.getElementById('cafe-gallery-container');
 if (cafeGallery) {
   fetchJSON('data/gallery-cafe.json').then(data => {
@@ -198,12 +234,15 @@ if (cafeGallery) {
       const item = document.createElement('div');
       item.className = 'gallery-item';
       item.innerHTML = `<img src="${photo.image}" alt="${photo.caption}" loading="lazy"><p>${photo.caption}</p>`;
+      item.querySelector('img').addEventListener('click', function() {
+        openLightbox(photo.image, photo.caption);
+      });
       cafeGallery.appendChild(item);
     });
   }).catch(e => console.error(e));
 }
 
-// ─── EVENTS GALLERY ─────────────────────────────────────────
+// ─── EVENTS GALLERY (with lightbox) ─────────────────────────
 const eventsGallery = document.getElementById('events-gallery-container');
 if (eventsGallery) {
   fetchJSON('data/gallery-events.json').then(data => {
@@ -212,6 +251,9 @@ if (eventsGallery) {
       item.className = 'gallery-item';
       if (photo.large) item.classList.add('events-gallery-item--large');
       item.innerHTML = `<img src="${photo.image}" alt="${photo.caption}" loading="lazy">`;
+      item.querySelector('img').addEventListener('click', function() {
+        openLightbox(photo.image, photo.caption);
+      });
       eventsGallery.appendChild(item);
     });
   }).catch(e => console.error(e));
