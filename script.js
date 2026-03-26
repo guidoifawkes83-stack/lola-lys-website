@@ -50,7 +50,7 @@ function fetchJSON(path) {
 // ─── RESORT RATES ───────────────────────────────────────────
 const ratesContainer = document.getElementById('rates-container');
 if (ratesContainer) {
-  fetchJSON('/data/rates.json').then(data => {
+  fetchJSON('data/rates.json').then(data => {
     data.rates.forEach(rate => {
       const card = document.createElement('div');
       card.className = 'rate-card';
@@ -80,7 +80,7 @@ if (ratesContainer) {
 // ─── CAFE MENU ──────────────────────────────────────────────
 const menuContainer = document.getElementById('menu-container');
 if (menuContainer) {
-  fetchJSON('/data/cafe-menu.json').then(data => {
+  fetchJSON('data/cafe-menu.json').then(data => {
     data.cafeMenu.forEach(category => {
       const section = document.createElement('div');
       section.className = 'menu-category';
@@ -120,7 +120,7 @@ if (menuContainer) {
 // ─── EVENT PACKAGES ─────────────────────────────────────────
 const packagesContainer = document.getElementById('packages-container');
 if (packagesContainer) {
-  fetchJSON('/data/event-packages.json').then(data => {
+  fetchJSON('data/event-packages.json').then(data => {
     data.eventPackages.forEach(pkg => {
       const card = document.createElement('div');
       card.className = 'package-card';
@@ -151,7 +151,7 @@ if (packagesContainer) {
 // ─── PROMO PACKAGES ─────────────────────────────────────────
 const promoContainer = document.getElementById('promo-container');
 if (promoContainer) {
-  fetchJSON('/data/promo-packages.json').then(data => {
+  fetchJSON('data/promo-packages.json').then(data => {
     data.promoPackages.forEach(pkg => {
       const card = document.createElement('div');
       card.className = 'promo-card';
@@ -180,7 +180,7 @@ if (promoContainer) {
 // ─── RESORT GALLERY ─────────────────────────────────────────
 const resortGallery = document.getElementById('resort-gallery-container');
 if (resortGallery) {
-  fetchJSON('/data/gallery-resort.json').then(data => {
+  fetchJSON('data/gallery-resort.json').then(data => {
     data.galleryResort.forEach(photo => {
       const item = document.createElement('div');
       item.className = 'gallery-item';
@@ -193,7 +193,7 @@ if (resortGallery) {
 // ─── CAFE GALLERY ───────────────────────────────────────────
 const cafeGallery = document.getElementById('cafe-gallery-container');
 if (cafeGallery) {
-  fetchJSON('/data/gallery-cafe.json').then(data => {
+  fetchJSON('data/gallery-cafe.json').then(data => {
     data.galleryCafe.forEach(photo => {
       const item = document.createElement('div');
       item.className = 'gallery-item';
@@ -206,7 +206,7 @@ if (cafeGallery) {
 // ─── EVENTS GALLERY ─────────────────────────────────────────
 const eventsGallery = document.getElementById('events-gallery-container');
 if (eventsGallery) {
-  fetchJSON('/data/gallery-events.json').then(data => {
+  fetchJSON('data/gallery-events.json').then(data => {
     data.galleryEvents.forEach(photo => {
       const item = document.createElement('div');
       item.className = 'gallery-item';
